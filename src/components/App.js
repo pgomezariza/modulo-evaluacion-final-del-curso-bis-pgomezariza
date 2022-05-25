@@ -72,7 +72,7 @@ function App() {
 
   return (
     <>
-      <h1 className="title">Owen Wilson WOW</h1>
+      <h1 className="title">Las Recetas de Paula</h1>
       <Routes>
         <Route
           path="/"
