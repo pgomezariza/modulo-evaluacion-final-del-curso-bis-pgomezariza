@@ -18,22 +18,9 @@ function App() {
   return (
     <>
       <h1 className="title">Las Recetas de Paula</h1>
-      <ListRecipe recipes = {dataRecipes}/>
+      <ListRecipe recipesç={dataRecipes}/>
       </>
   );
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default App;

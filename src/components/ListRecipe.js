@@ -14,5 +14,5 @@ function ListRecipe(props){
       <ul className="">{recipesElements}</ul>
     </section>
   );
-}
+};
 export default ListRecipe; 

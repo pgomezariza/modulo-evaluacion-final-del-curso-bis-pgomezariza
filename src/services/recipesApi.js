@@ -5,7 +5,7 @@ const getApiData = () => {
   return fetch('https://api.sampleapis.com/recipes/recipes')
     .then ((response) => response.json())
     .then ((data) => {
-      const dataClean = data.map((recipes, id) => {
+      const dataClean = data.map((recipes) => {
         return {
           id: recipes.id,
           title: recipes.title,

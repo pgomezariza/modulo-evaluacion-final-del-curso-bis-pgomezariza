@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ItemRecipe (props){
+function ItemRecipe(props){
   return (
     <>
       <img width="100" height=""
@@ -17,5 +17,5 @@ function ItemRecipe (props){
       <Link to={`/recipe/${props.recipe.id}`} className="">Details</Link>
     </>
   );
-}
+};
 export default ItemRecipe; 
