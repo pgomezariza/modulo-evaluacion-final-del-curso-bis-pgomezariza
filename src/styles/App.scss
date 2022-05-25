@@ -1,0 +1,16 @@
+@import '../styles/Variables.scss';
+
+.landing {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style:none;
+  font-family: $fontText;
+  background-color: $colorFadedOrange;
+}
+
+.title {
+  text-align: center;
+  font-family: $fontTitle; 
+  font-size: 50px;
+}

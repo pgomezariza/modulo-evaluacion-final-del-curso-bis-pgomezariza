@@ -1,0 +1,11 @@
+@import '../styles/Variables.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  border: solid 1px $colorLightKhaki;
+  border-radius: 5px;
+  margin: 0 100px;
+}
