@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <h1 className="title">Las Recetas de Paula</h1>
-      <ListRecipe recipesç={dataRecipes}/>
+      <ListRecipe recipes={dataRecipes}/>
       </>
   );
 

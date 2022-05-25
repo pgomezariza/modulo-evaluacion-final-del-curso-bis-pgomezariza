@@ -1,9 +1,10 @@
 import ItemRecipe from "./ItemRecipe";
 
-function ListRecipe(props){
+
+function ListRecipe(props) { 
   const recipesElements = props.recipes.map((recipe) => {
     return (
-      <li> 
+      <li key={recipe.id}> 
         <ItemRecipe recipe={recipe} />
       </li>
     );
