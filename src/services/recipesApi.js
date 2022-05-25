@@ -5,16 +5,14 @@ const getApiData = () => {
   return fetch('https://api.sampleapis.com/recipes/recipes')
     .then ((response) => response.json())
     .then ((data) => {
-      const dataClean = data.map((movie, index) => {
+      const dataClean = data.map((recipes, id) => {
         return {
-          id: index,
-          poster: movie.poster,
-          title: movie.movie,
-          full_line: movie.full_line,
-          year: movie.year,
-          director: movie.director,
-          audio: movie.audio,
-          wow: movie.total_wows_in_movie,
+          id: recipes.id,
+          title: recipes.title,
+          cuisine: recipes.cuisine,
+          tags: recipes.tags,
+          photoURL: recipes.photoURL,
+          calories: recipes.calories 
         };
       });
       return dataClean; 
