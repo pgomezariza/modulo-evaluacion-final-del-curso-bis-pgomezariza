@@ -6,8 +6,8 @@ import Filters from "./Filters";
 function App() {
   //Variables de Estado
   const [dataRecipes, setDataRecipes] = useState([]);
-  const [filterTypeFood, setFilterTypeFood] = useState ([]); 
-  
+  const [filterTypeFood, setFilterTypeFood] = useState (''); 
+
 
 
   useEffect(() => {

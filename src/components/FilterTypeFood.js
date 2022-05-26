@@ -9,6 +9,7 @@ function FilterTypeFood() {
             placeholder="Buscar por tipo de comida..."
             className=""
             name=""
+            onChange={}
           />
         </label>
       </div>
