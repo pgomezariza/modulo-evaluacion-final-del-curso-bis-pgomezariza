@@ -11,7 +11,7 @@ const getApiData = () => {
           title: recipes.title,
           cuisine: recipes.cuisine,
           tags: recipes.tags,
-          photoURL: recipes.photoURL,
+          photoUrl: recipes.photoUrl,
           calories: recipes.calories, 
         };
       });

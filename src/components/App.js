@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+
 import getApiData from "../services/recipesApi";
+
 import ListRecipe from "./ListRecipe";
 import Filters from "./Filters";
 
@@ -17,6 +19,18 @@ function App() {
     });
   }, []);
 
+  const handleFilterTypeFood = (value) => {
+    setFilterTypeFood (value)
+  }; 
+
+  const recipesFilter = dataRecipes.filter((recipe) => {
+    if (filterTypeFood===""){
+      return true; 
+    }else{
+      return recipe.typefood === filterTypeFood}; 
+  });
+    
+
 
   return (
     <>
@@ -25,8 +39,10 @@ function App() {
       <p className="quote_by">By Karlos Arguiñano</p>
       <p className="quote_2">Como a tripa vacia CORAZON sin alegría no puede ser...a continuación encontrarás unas recetas ricas ricas para tus menus semanales.</p>
       <p className="quote_3">Bon Appétit!</p>
-      <ListRecipe recipes={dataRecipes}/>
-      <Filters />
+      <Filters handleFilterTypeFood = {handleFilterTypeFood }
+      filterTypeFood = 
+      {filterTypeFood}/>
+      <ListRecipe recipes={recipesFilter}/>
       </>
   );
 

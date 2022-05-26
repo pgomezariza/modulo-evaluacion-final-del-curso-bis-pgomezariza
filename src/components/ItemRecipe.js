@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 function ItemRecipe(props){
   return (
     <>
-      <img width="100" height=""
+      <img width="150" height="150"
         className=""
         alt={props.recipe.recipe}
-        src={props.recipe.photoURL}
+        src={props.recipe.photoUrl}
       />
       <h2 className="">
         {props.recipe.title} - {props.recipe.cuisine}

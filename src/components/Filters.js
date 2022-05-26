@@ -1,9 +1,9 @@
 import FilterTypeFood from './FilterTypeFood';
 
-function Filters() {
+function Filters(props) {
   return <section>
     <form>
-      <FilterTypeFood />
+      <FilterTypeFood handleFilterTypeFood = {props.handleFilterTypeFood } />
     </form>
   </section>
 

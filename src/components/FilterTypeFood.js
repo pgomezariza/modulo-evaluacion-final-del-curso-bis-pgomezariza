@@ -1,5 +1,7 @@
-function FilterTypeFood() {
-    const handleFilterTypeFood = () => 
+function FilterTypeFood(props) {
+    const handleFilterTypeFood = (ev) => {
+      props.handleFilterTypeFood(ev.target.value); 
+    };
     
   return (
     <>
@@ -9,9 +11,10 @@ function FilterTypeFood() {
           <input
             type="text"
             placeholder="Buscar por tipo de comida..."
-            className=""
+            className="recipeFilter"
             name=""
             onChange={handleFilterTypeFood}
+            value={props.FilterTypeFood}
           />
         </label>
       </div>
@@ -20,4 +23,4 @@ function FilterTypeFood() {
   );
 
 } 
-export default Filter
+export default FilterTypeFood;
