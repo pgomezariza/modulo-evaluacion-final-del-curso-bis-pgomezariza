@@ -1,4 +1,6 @@
 function FilterTypeFood() {
+    const handleFilterTypeFood = () => 
+    
   return (
     <>
       <div>
@@ -9,7 +11,7 @@ function FilterTypeFood() {
             placeholder="Buscar por tipo de comida..."
             className=""
             name=""
-            onChange={}
+            onChange={handleFilterTypeFood}
           />
         </label>
       </div>
@@ -18,4 +20,4 @@ function FilterTypeFood() {
   );
 
 } 
-export default FilterTypeFood;
+export default Filter
