@@ -6,21 +6,19 @@ function FilterTypeFood(props) {
   return (
     <>
       <div>
-        <label>
+        <label className="label_input" htmlFor="recipeFilter">
           Recetas
           <input
             type="text"
             placeholder="Buscar por tipo de comida..."
-            className="recipeFilter"
-            name=""
+            className="recipe_input"
+            name="recipeFilter"
             onChange={handleFilterTypeFood}
-            value={props.FilterTypeFood}
+            value={props.filterTypeFood}
           />
         </label>
       </div>
-
     </>
   );
-
 } 
 export default FilterTypeFood;
