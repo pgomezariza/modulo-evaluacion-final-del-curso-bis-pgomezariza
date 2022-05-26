@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 function DetailRecipe(props){
+
   return (
     <>
       <section>
@@ -9,12 +11,12 @@ function DetailRecipe(props){
         />
         <div>
           <h3 className="card__title">{props.recipe.title}</h3>
-          <p className="card__description"> Tipo de comida {props.recipe.cuisine}</p>
-          <p className="card__description"> Tags {props.recipe.tags}</p>
-          <p className="card__description"> Calorias {props.recipe.calories}</p>
+          <p className="card__description"> Tipo de comida: {props.recipe.cuisine}</p>
+          <p className="card__description"> Tags: {props.recipe.tags}</p>
+          <p className="card__description"> Calorias: {props.recipe.calories}</p>
         </div>
       </section>
-      <Link to="/" className="back__list">Back to List</Link>
+      <Link to="/" className="back__list">Back to List </Link>
     </>
   );
 }

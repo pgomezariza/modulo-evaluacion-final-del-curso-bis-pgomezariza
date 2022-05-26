@@ -1,5 +1,5 @@
 function FilterTypeFood(props) {
-    const handleFilterTypeFood = (ev) => {
+    const handleChange = (ev) => {
       props.handleFilterTypeFood(ev.target.value); 
     };
     
@@ -13,7 +13,7 @@ function FilterTypeFood(props) {
             placeholder="Buscar por tipo de comida..."
             className="recipe_input"
             name="recipeFilter"
-            onChange={handleFilterTypeFood}
+            onChange={handleChange}
             value={props.filterTypeFood}
           />
         </label>
