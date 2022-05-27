@@ -46,7 +46,7 @@ function App() {
 
   return (
     <>
-      <h1 className="title">Las Recetas de Paula</h1>
+      <h1 className="font-effect-fire">Las Recetas de Paula</h1>
       <div className="">
         <p className="quote_1">Rico Rico y con Fundamento...</p>
         <p className="quote_by">By Karlos Arguiñano</p>
