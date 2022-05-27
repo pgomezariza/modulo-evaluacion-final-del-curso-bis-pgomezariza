@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom';
-function DetailRecipe(props){
+import '../styles/DetailRecipe.scss';
 
+function DetailRecipe(props) {
+  console.log(props);
   return (
     <>
       <section>
-        <img width="150" height="150"
+        <img width="500" height="500"
           className=""
-          alt={props.recipe.recipe}
-          src={props.recipe.photoUrl}
+          alt={props.recipe}
+          src={props.recipe}
         />
         <div>
-          <h3 className="card__title">{props.recipe.title}</h3>
-          <p className="card__description"> Tipo de comida: {props.recipe.cuisine}</p>
-          <p className="card__description"> Tags: {props.recipe.tags}</p>
-          <p className="card__description"> Calorias: {props.recipe.calories}</p>
+          <h3 className="card__title">{props.recipe}</h3>
+          <p className="card__description"> Tipo de comida: {props.recipe}</p>
+          <p className="card__description"> Tags: {props.recipe}</p>
+          <p className="card__description"> Calorias: {props.recipe}</p>
         </div>
-      </section>
       <Link to="/" className="back__list">Back to List </Link>
+      </section>
     </>
   );
 }

@@ -1,5 +1,7 @@
+import '../styles/FilterTypeFood.scss';
+
 function FilterTypeFood(props) {
-    const handleChange = (ev) => {
+    const handleFilterTypeFood = (ev) => {
       props.handleFilterTypeFood(ev.target.value); 
     };
     
@@ -13,7 +15,7 @@ function FilterTypeFood(props) {
             placeholder="Buscar por tipo de comida..."
             className="recipe_input"
             name="recipeFilter"
-            onChange={handleChange}
+            onChange={handleFilterTypeFood}
             value={props.filterTypeFood}
           />
         </label>

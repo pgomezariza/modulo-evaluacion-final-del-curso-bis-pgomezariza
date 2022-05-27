@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import '../styles/ItemRecipe.scss';
 
-function ItemRecipe(props){
+function ItemRecipe(props) {
   return (
     <>
         <img width="150" height="150"

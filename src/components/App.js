@@ -1,12 +1,14 @@
-import { useState, useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
-import { matchPath, useLocation } from "react-router";
+import { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { matchPath, useLocation } from 'react-router';
 
-import getApiData from "../services/recipesApi";
+import getApiData from '../services/recipesApi';
 
-import ListRecipe from "./ListRecipe";
-import Filters from "./Filters";
-import DetailRecipe from "./DetailRecipe";
+import ListRecipe from './ListRecipe';
+import Filters from './Filters';
+import DetailRecipe from './DetailRecipe';
+
+import '../styles/App.scss'; 
 
 function App() {
   //Variables de Estado
@@ -26,11 +28,12 @@ function App() {
   };
 
 
-  const recipesFilter = dataRecipes.filter((recipe) => {
-    if (filterTypeFood===""){
+  const recipeFilters = dataRecipes.filter((recipe) => {
+    if (filterTypeFood==='') {
       return true; 
-    }else{
-      return recipe.typefood === filterTypeFood}; 
+    } else {
+      return recipe.typefood === filterTypeFood;
+    }
   });
     
 
@@ -39,7 +42,7 @@ function App() {
 
   const recipeId = dataPath !== null ? dataPath.params.recipeId : null;
   const recipeFound = dataRecipes.find((item) => item.id === recipeId);
-  console.log(recipeFound);
+  
 
   return (
     <>
@@ -56,15 +59,14 @@ function App() {
               <>
                 <Filters 
                   handleFilterTypeFood = {handleFilterTypeFood }
-                  //filterTypeFood = {filterTypeFood}
                 />
-                <ListRecipe recipes={dataRecipes}/>
+                <ListRecipe recipes={recipeFilters}/>
               </>
             } 
           />
           <Route
             path="/recipe/:recipeId"
-            element={<DetailRecipe recipe={recipeFound} />}
+            element={<DetailRecipe  />}
           />
         </Routes>
       </div>

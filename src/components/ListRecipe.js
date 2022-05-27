@@ -1,4 +1,5 @@
 import ItemRecipe from "./ItemRecipe";
+import '../styles/ListRecipe.scss';
 
 
 function ListRecipe(props) { 

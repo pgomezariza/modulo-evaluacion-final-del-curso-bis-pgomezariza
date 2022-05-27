@@ -1,5 +1,7 @@
 import FilterTypeFood from './FilterTypeFood';
 
+import '../styles/Filters.scss';
+
 function Filters(props) {
   return (
     <section>
