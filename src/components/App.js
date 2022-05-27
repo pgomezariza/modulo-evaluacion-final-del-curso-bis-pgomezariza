@@ -52,6 +52,8 @@ function App() {
         <p className="quote_by">By Karlos Arguiñano</p>
         <p className="quote_2">Como a tripa vacia CORAZON sin alegría no puede ser...a continuación encontrarás unas recetas ricas ricas para tus menus semanales.</p>
         <p className="quote_3">Bon Appétit!</p>
+      </div>
+      <div>
         <Routes>
           <Route 
             path="/" 
