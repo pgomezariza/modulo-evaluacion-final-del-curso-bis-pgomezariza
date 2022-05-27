@@ -1,15 +1,31 @@
 @import '../styles/Variables.scss';
 
-.movieNotFound {
+.recipeNotFound {
   text-align: center;
   font-family: $fontTitle; 
   font-size: 25px;
   margin: 40px;
+  color: $colorDullOrange;
 }
 
-.movies {
+.recipes__all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: auto;
+  
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media all and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.recipes {
   list-style:none;
-  border: solid 1px $colorLightKhaki;
+  border: solid 1px $colorDullOrange;
   border-radius: 5px;
   margin: 50px;
   display: flex;
@@ -18,17 +34,3 @@
   text-align: center;
 }
 
-.movie__details1--all {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
-  padding: 5px;
-  
-
-  @media all and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  @media all and (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
