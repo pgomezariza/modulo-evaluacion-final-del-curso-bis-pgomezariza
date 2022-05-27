@@ -5,11 +5,11 @@ function ItemRecipe(props) {
   return (
     <>
         <img width="150" height="150"
-          className=""
+          className="card__photo--item"
           alt={props.recipe.recipe}
           src={props.recipe.photoUrl}
         />
-        <div>
+        <div className="card__text">
           <h3 className="card__title">{props.recipe.title}</h3>
           <p className="card__description"> Tipo de comida: {props.recipe.cuisine}</p>
           <p className="card__description"> Tags: {props.recipe.tags}</p>
