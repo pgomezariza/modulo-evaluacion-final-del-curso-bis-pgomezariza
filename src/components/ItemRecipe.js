@@ -15,7 +15,7 @@ function ItemRecipe(props) {
           <p className="card__description"> Tags: {props.recipe.tags}</p>
           <p className="card__description"> Calorias: {props.recipe.calories}</p>
         </div>
-      <Link to={`/recipe/${props.recipe.id}`} className="">Details</Link>
+      <Link to={`/recipe/${props.recipe.id}`} className="">Detalle</Link>
     </>
   );
 };

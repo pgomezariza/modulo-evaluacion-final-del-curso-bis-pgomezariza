@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { matchPath, useLocation } from 'react-router';
 
 import getApiData from '../services/recipesApi';
+import localStorage from '../services/localStorage';
 
 import ListRecipe from './ListRecipe';
 import Filters from './Filters';
@@ -12,7 +13,7 @@ import '../styles/App.scss';
 
 function App() {
   //Variables de Estado
-  const [dataRecipes, setDataRecipes] = useState([]);
+  const [dataRecipes, setDataRecipes] = useState(localStorage.get('recipes', []));
   const [filterTypeFood, setFilterTypeFood] = useState('');
 
   useEffect(() => {
@@ -20,6 +21,10 @@ function App() {
       setDataRecipes(dataFromApi);
     });
   }, []);
+
+  useEffect(() => {
+    localStorage.set('recipes', dataRecipes);
+  }, [dataRecipes]); 
 
   const handleFilterTypeFood = (value) => {
     setFilterTypeFood(value);

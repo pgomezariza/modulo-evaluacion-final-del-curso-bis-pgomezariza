@@ -27,7 +27,7 @@ function DetailRecipe(props) {
           </p>
         </div>
         <Link to="/" className="back__list">
-          Back to List{' '}
+          Volver{' '}
         </Link>
       </section>
     </>
