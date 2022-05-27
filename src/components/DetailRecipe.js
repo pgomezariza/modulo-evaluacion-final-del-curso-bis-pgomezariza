@@ -2,15 +2,14 @@ import { Link } from 'react-router-dom';
 import '../styles/DetailRecipe.scss';
 
 function DetailRecipe(props) {
-  console.log(props);
 
   return (
     <>
-      <section>
+      <section className="recipe__detail">
         <img
-          width="500"
-          height="500"
-          className=""
+          width="450"
+          height="450"
+          className="card__photo"
           alt={props.recipedetail.photoUrl}
           src={props.recipedetail.photoUrl}
         />
@@ -26,10 +25,10 @@ function DetailRecipe(props) {
             Calorias: {props.recipedetail.calories}
           </p>
         </div>
-        <Link to="/" className="back__list">
-          Volver{' '}
-        </Link>
       </section>
+      <Link to="/" className="back__list">
+          Volver{' '}
+      </Link>
     </>
   );
 }
