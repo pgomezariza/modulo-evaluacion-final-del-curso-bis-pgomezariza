@@ -3,8 +3,6 @@
 .body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  list-style:none;
   font-family: $fontText;
 }
 
@@ -18,4 +16,35 @@
   text-align: center;
   font-family: Sofia; 
   font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.header__quote1 {
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.header__quoteby {
+  font-size: 15px;
+  margin-top: -35px;
+}
+
+.header__quote2 {
+  font-size: 25px;
+  margin: 0px 100px;
+  font-weight: bold;
+}
+
+.header__quote3 {
+  font-size: 20px;
+  margin-top: -10px;
 }

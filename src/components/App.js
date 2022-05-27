@@ -47,11 +47,11 @@ function App() {
   return (
     <>
       <h1 className="font-effect-fire">Las Recetas de Paula</h1>
-      <div className="">
-        <p className="quote_1">Rico Rico y con Fundamento...</p>
-        <p className="quote_by">By Karlos Arguiñano</p>
-        <p className="quote_2">Como a tripa vacia CORAZON sin alegría no puede ser...a continuación encontrarás unas recetas ricas ricas para tus menus semanales.</p>
-        <p className="quote_3">Bon Appétit!</p>
+      <div className="header">
+        <p className="header__quote1">"¡... Rico Rico y con Fundamento...!"</p>
+        <p className="header__quoteby">By Karlos Arguiñano</p>
+        <p className="header__quote2">Como a tripa vacia ❤️ sin alegría no puede ser... A continuación encontrarás unas recetas ricas ricas para tus menus semanales.</p>
+        <p className="header__quote3">Bon Appétit!</p>
       </div>
       <div>
         <Routes>
