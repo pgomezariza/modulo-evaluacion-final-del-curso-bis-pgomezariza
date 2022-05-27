@@ -1,10 +1,10 @@
 import '../styles/FilterTypeFood.scss';
 
 function FilterTypeFood(props) {
-    const handleFilterTypeFood = (ev) => {
-      props.handleFilterTypeFood(ev.target.value); 
-    };
-    
+  const handleFilterTypeFood = (ev) => {
+    props.handleFilterTypeFood(ev.target.value);
+  };
+
   return (
     <>
       <div>
@@ -22,5 +22,5 @@ function FilterTypeFood(props) {
       </div>
     </>
   );
-} 
+}
 export default FilterTypeFood;

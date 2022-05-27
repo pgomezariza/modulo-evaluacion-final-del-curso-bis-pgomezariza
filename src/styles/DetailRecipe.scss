@@ -1,12 +1,11 @@
 @import '../styles/Variables.scss';
+
 .movie__details2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   align-content: center;
-  border: solid 1px $colorLightKhaki;
-  border-radius: 5px;
   margin: 0 450px;
   padding: 30px;
 }
