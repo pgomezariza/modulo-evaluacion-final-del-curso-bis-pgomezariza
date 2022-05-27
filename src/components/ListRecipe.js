@@ -6,7 +6,7 @@ function ListRecipe(props) {
   //Si el array está vacio, devuelvo html con mensaje.
   if(props.recipes.length < 1){
     return (
-      <p className="recipeNotFound">¡OPS! No hemos encontrado una receta que coincida con su busqueda.</p>
+      <p className="recipeNotFound">¡OPS! No hemos encontrado el tipo de comida que buscas. Inténtalo de nuevo. </p>
     )
   }
   

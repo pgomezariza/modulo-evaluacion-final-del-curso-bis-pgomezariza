@@ -1,9 +1,12 @@
 @import '../styles/Variables.scss';
 
-.form__movie {
-  margin: 10px;
+.label__input {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 25px;
 }
 
-.form__mInput {
-  margin: 15px;
+.recipe__input {
+  margin: 10px;
+  padding: 5px;
 }

@@ -8,12 +8,12 @@ function FilterTypeFood(props) {
   return (
     <>
       <div>
-        <label className="label_input" htmlFor="recipeFilter">
-          Recetas
+        <label className="label__input" htmlFor="recipeFilter">
+          Tipo de Comida
           <input
             type="text"
-            placeholder="Buscar por tipo de comida..."
-            className="recipe_input"
+            placeholder="Buscar..."
+            className="recipe__input"
             name="recipeFilter"
             onChange={handleFilterTypeFood}
             value={props.filterTypeFood}
