@@ -1,9 +1,15 @@
-import '../styles/saveBtn.scss';
+import localStorage from '../services/localStorage';
 
-function SaveBtn() {
+import '../styles/FilterTypeFood.scss';
+
+function SaveBtn(props) {
+  const handleClickSaveBtn = (ev) => {
+    localStorage.set('saveRecipes', props.recipes);
+  };
 
   return (
-    <button type="button" class="saveBtn"> Guardar </button>
+    <button type="button" className="saveBtn"
+    onClick={handleClickSaveBtn}> Guardar </button>
   );
 };
 

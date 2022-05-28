@@ -1,9 +1,13 @@
-import '../styles/recoverBtn.scss';
+import '../styles/FilterTypeFood.scss';
 
 function RecoverBtn() {
+  const handleClickRecoverBtn = (ev) => {
+    console.log("RecoverBtn");
+  };
 
   return (
-    <button type="button" class="recoverBtn"> Recuperar </button>
+    <button type="button" className="recoverBtn"
+    onClick={handleClickRecoverBtn}> Recuperar </button>
   );
 };
 

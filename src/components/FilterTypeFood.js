@@ -18,8 +18,6 @@ function FilterTypeFood(props) {
             onChange={handleFilterTypeFood}
             value={props.filterTypeFood}
           />
-          
-          
         </label>
       </div>
     </>

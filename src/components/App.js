@@ -8,10 +8,12 @@ import localStorage from '../services/localStorage';
 import ListRecipe from './ListRecipe';
 import Filters from './Filters';
 import DetailRecipe from './DetailRecipe';
+import SaveBtn from './SaveBtn';
+import RecoverBtn from './RecoverBtn';
 
 import '../styles/App.scss';
 
-console.log(localStorage);
+//console.log(localStorage);
 
 
 function App() {
@@ -41,6 +43,7 @@ function App() {
         .toLowerCase()
         .includes(filterTypeFood.toLowerCase());
     }
+    
   });
   
   const { pathname } = useLocation();
@@ -68,6 +71,8 @@ function App() {
         <p className="header__quote3">Bon Appétit!</p>
       </div>
       <div>
+        <SaveBtn recipes={recipeFilters}/>
+        <RecoverBtn/>
         <Routes>
           <Route
             path="/"
@@ -86,6 +91,7 @@ function App() {
             element={<DetailRecipe recipedetail={recipeFound} />}
           />
         </Routes>
+        
       </div>
     </>
   );
