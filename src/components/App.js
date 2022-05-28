@@ -13,16 +13,13 @@ import RecoverBtn from './RecoverBtn';
 
 import '../styles/App.scss';
 
-
 function App() {
   //Variables de Estado
   const [dataRecipes, setDataRecipes] = useState(localStorage.get('recipes', []));
   const [filterTypeFood, setFilterTypeFood] = useState('');
 
   useEffect(() => {
-    console.log(dataRecipes.length);
     if (dataRecipes.length === 0) {
-      console.log('llamo api');
       getApiData().then((dataFromApi) => {
         setDataRecipes(dataFromApi);
       });
@@ -56,8 +53,6 @@ function App() {
     (recipe) => recipe.id === parseInt(recipeId)
   );
   
-
-  //GUARDAR y RECUPERAR del LOCAL
   
 
   return (
