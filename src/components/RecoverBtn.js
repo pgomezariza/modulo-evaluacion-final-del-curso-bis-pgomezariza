@@ -1,4 +1,4 @@
-import '../styles/FilterTypeFood.scss';
+import '../styles/Button.scss';
 
 function RecoverBtn() {
   const handleClickRecoverBtn = (ev) => {

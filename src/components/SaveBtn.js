@@ -1,6 +1,6 @@
 import localStorage from '../services/localStorage';
 
-import '../styles/FilterTypeFood.scss';
+import '../styles/Button.scss';
 
 function SaveBtn(props) {
   const handleClickSaveBtn = (ev) => {
