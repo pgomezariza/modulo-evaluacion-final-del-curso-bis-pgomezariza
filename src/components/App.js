@@ -13,8 +13,6 @@ import RecoverBtn from './RecoverBtn';
 
 import '../styles/App.scss';
 
-//console.log(localStorage);
-
 
 function App() {
   //Variables de Estado
@@ -22,10 +20,14 @@ function App() {
   const [filterTypeFood, setFilterTypeFood] = useState('');
 
   useEffect(() => {
-    getApiData().then((dataFromApi) => {
-      setDataRecipes(dataFromApi);
-    });
-  }, []);
+    console.log(dataRecipes.length);
+    if (dataRecipes.length === 0) {
+      console.log('llamo api');
+      getApiData().then((dataFromApi) => {
+        setDataRecipes(dataFromApi);
+      });
+    }
+  }, );
 
   useEffect(() => {
     localStorage.set('recipes', dataRecipes);
