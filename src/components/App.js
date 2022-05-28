@@ -68,8 +68,10 @@ function App() {
         <p className="header__quote3">Bon Appétit!</p>
       </div>
       <div>
-        <SaveBtn recipes={recipeFilters}/>
-        <RecoverBtn/>
+        <div className="button__container">
+          <SaveBtn recipes={recipeFilters}/>
+          <RecoverBtn/>
+        </div>
         <Routes>
           <Route
             path="/"
