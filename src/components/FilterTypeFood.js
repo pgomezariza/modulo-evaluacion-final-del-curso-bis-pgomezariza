@@ -18,12 +18,8 @@ function FilterTypeFood(props) {
             onChange={handleFilterTypeFood}
             value={props.filterTypeFood}
           />
-          <button type="button" class="saveBtn js-saveBtn">
-          Guardar
-          </button>
-          <button type="button" class="recoverBtn js-recoverBtn">
-          Recuperar
-          </button>
+          
+          
         </label>
       </div>
     </>

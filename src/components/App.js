@@ -11,6 +11,9 @@ import DetailRecipe from './DetailRecipe';
 
 import '../styles/App.scss';
 
+console.log(localStorage);
+
+
 function App() {
   //Variables de Estado
   const [dataRecipes, setDataRecipes] = useState(localStorage.get('recipes', []));
@@ -39,7 +42,7 @@ function App() {
         .includes(filterTypeFood.toLowerCase());
     }
   });
-  // console.log(recipeFilters);
+  
   const { pathname } = useLocation();
   const dataPath = matchPath('/recipe/:id', pathname);
 
@@ -47,7 +50,11 @@ function App() {
   const recipeFound = recipeFilters.find(
     (recipe) => recipe.id === parseInt(recipeId)
   );
-  // console.log(recipeFound);
+  
+
+  //GUARDAR y RECUPERAR del LOCAL
+  
+
   return (
     <>
       <h1 className="font-effect-fire">Las Recetas de Paula</h1>
